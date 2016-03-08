@@ -1,0 +1,7 @@
+{
+    "version": "0.0.1",
+    "name" : "swat-mojo-template-named-vars",
+    "description": "swat integration tests for Mojolicious Template named variables",
+    "url" : "https://github.com/melezhik/swat-mojo-template-named-vars"
+}
+
