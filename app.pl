@@ -22,7 +22,8 @@ sub welcome {
   my $self = shift;
 
   # Render response
-  $self->render( template => 'welcome' );
+  $self->render( template => 'welcome', user => 'swat' );
+
 }
 
 package main;
@@ -37,5 +38,5 @@ __DATA__
 
 @@ welcome.html.ep
 
-welcome aboard!
+<%= $user %> welcome aboard!
 
