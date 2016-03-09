@@ -44,7 +44,7 @@ Mojolicious::Commands->start_app('MyApp');
 
 __DATA__
 
-@@ default.html.ep
+@@ foo/default.html.ep
 Hello world!
 
 @@ welcome.html.ep
