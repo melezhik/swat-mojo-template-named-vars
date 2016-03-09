@@ -10,6 +10,7 @@ sub startup {
 
   # Route
   $r->get('/welcome')->to(controller => 'foo', action => 'welcome');
+  $r->get('/default')->to(controller => 'foo', action => 'default');
 
 }
 
@@ -17,6 +18,13 @@ package MyApp::Controller::Foo;
 use Mojo::Base 'Mojolicious::Controller';
 
 # Action
+
+sub default {
+
+  my $self = shift;
+
+}
+
 sub welcome {
 
   my $self = shift;
@@ -36,7 +44,9 @@ Mojolicious::Commands->start_app('MyApp');
 
 __DATA__
 
-@@ welcome.html.ep
+@@ default.html.ep
+Hello world!
 
+@@ welcome.html.ep
 <%= $user %> welcome aboard!
 
